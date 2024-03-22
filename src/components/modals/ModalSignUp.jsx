@@ -13,6 +13,7 @@ function ModalSignUp({closeModal, openLogin}) {
     const [password, setPassword] = useState("");
     const [status, setStatus] = useState("");
     const [failStatus, setFailStatus] = useState("");
+    const [loading, setLoading] = useState(false);
 
     const navigate = useNavigate();
     const location = useLocation();
@@ -42,6 +43,7 @@ function ModalSignUp({closeModal, openLogin}) {
 
     const register = async () => {
         try {
+            setLoading(true);
             const response = await axios.post(`${process.env.REACT_APP_BE_HOST}/register`, {
                 email: email,
                 password: password
@@ -54,6 +56,7 @@ function ModalSignUp({closeModal, openLogin}) {
             dispatch(setUserEmail(email));
             getUserID();
             checkURL();
+            setLoading(false);
         } catch (error) {
             console.error("Regestration failed: ", error.response ? error.response.data : error.message);
             setFailStatus(error.response.data.message);
@@ -78,7 +81,7 @@ function ModalSignUp({closeModal, openLogin}) {
                     <input type="text" placeholder="Email Address" onChange={(e) => setEmail(e.target.value)}/>
                     <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)}/>
 
-                    <button className="loginBtn" onClick={register}>{status === "success" ? "Success..." : "Sign up"}</button>
+                    <button className="loginBtn" onClick={register}>{loading ? "signing up..." : status === "success" ? "Success..." : "Sign up"}</button>
 
                     <div className="noAcc">
                         <h4 onClick={openLogin}>Already have an account?</h4>
