@@ -1,0 +1,178 @@
+
+.audio_player_wrapper {
+    width: 100%;
+    height: 80px;
+    margin-top: auto;
+    background-color: #042330;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+/*####### audio track info #############*/ 
+.audio_track_info {
+    width: calc(100% / 3);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.audio_track_info figure {
+    display: flex;
+    height: 48px;
+    width: 48px;
+    min-width: 48px;
+}
+
+.audio_track_info img {
+    width: 100%;
+    height: 100%;
+}
+
+.audio_track_wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.audio_track_title {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.audio_track_author {
+    color: #bac8ce;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+/*####### audio track control #############*/ 
+
+.audio_player_controls {
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.control_icon_style {
+    width: 48px;
+    height: 48px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.control_icon_style_time_btns {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*####### audio progress wrapper #############*/ 
+
+.audio_progress_wrapper {
+    width: calc(100% / 3);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.audio_time {
+    color: #fff;
+    font-size: 14px;
+}
+
+/*
+.audio_progress_bar {
+    height: 2px;
+    max-width: 300px;
+    width: 100%;
+    margin-top: 18px;
+    padding-left: 0;
+    cursor: pointer;
+}
+
+*/
+
+input[type="range"] {
+    --range-progress: 0;
+    -webkit-appearance: none; 
+    max-width: 300px;
+    width: 100%; 
+    margin-top: 18px;
+    background: transparent; 
+    cursor: pointer; 
+    border: none;
+}
+  
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 4px; 
+    background: gray;
+    border-radius: 2px; 
+}
+  
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    height: 12px;
+    width: 12px;
+    background: white; 
+    border-radius: 50%; 
+    margin-top: -1.5%;
+    z-index: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: var(--range-progress);
+    height: 6px;
+    background: linear-gradient(to right, green , gray);
+    z-index: -1;
+}
+
+
+/*###################*/
+
+
+@media (max-width: 768px) {
+  
+    .audio_player_wrapper {
+        width: 100%;
+        height: 180px;
+        margin-top: auto;
+        background-color: #042330;
+        display: flex;
+        flex-direction: column;
+        padding: 16px 24px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 9999;
+    }
+
+    .audio_track_info {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .audio_player_controls {
+        width: 100%;
+    }
+
+    .audio_progress_wrapper {
+        width: 100%;
+    }
+}
+

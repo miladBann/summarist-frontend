@@ -1,0 +1,22 @@
+
+.recommendedbooks_subtitle {
+    font-weight: 300;
+    color: #394547;
+    margin-bottom: 16px;
+}
+
+.recommendedbooks_title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #032b41;
+    margin-bottom: 16px
+}
+
+.recommendedbooks_container {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    gap: 16px;
+    scroll-snap-type: x;
+    margin-bottom: 32px;
+}

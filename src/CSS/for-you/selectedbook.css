@@ -1,0 +1,103 @@
+
+
+.selectedbooks_title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #032b41;
+    margin-bottom: 16px
+}
+
+.selectedBook_container {
+    display: flex;
+    justify-content: space-between;
+    width: calc((100% / 3) * 2);
+    background-color: #fbefd6;
+    border-radius: 4px;
+    padding: 24px;
+    gap: 24px;
+}
+
+.selectedbook_divider {
+    background-color: #bac8ce;
+    width: 0.5px;
+}
+
+.selectedBook_container h3 {
+    width: 40%;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.selectedbook_display {
+    width: 60%;
+    display: flex;
+    gap: 16px;
+}
+
+.selectedbook_img {
+    width: 140px;
+    height: 140px;
+}
+
+.selectedbook_book_name {
+    font-weight: 600;
+    color: #032b41;
+    margin-bottom: 8px;
+}
+
+.selectedbook_author_name {
+    font-size: 14px;
+    font-weight: 400;
+    color: #394547;
+    margin-bottom: 16px;
+}
+
+.time_duration {
+    font-size: 14px;
+    font-weight: 500;
+    color: #032b41;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.duration_icon {
+    width: 40px;
+    height: 40px;
+    color: #000;
+}
+
+
+/*#################*/
+
+@media (max-width: 768px) { 
+    .selectedBook_container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fbefd6;
+        border-radius: 4px;
+        padding: 24px;
+        gap: 0px;
+    }
+
+    .selectedbooks_title {
+        font-size: 16px;
+    }
+
+    .selectedbook_divider {
+        display: none;
+    }
+
+    .selectedbook_display {
+        width: 100%;
+        display: flex;
+        gap: 16px;
+    }
+
+    .selectedBook_container h3 {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}

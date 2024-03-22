@@ -1,0 +1,24 @@
+
+
+.finished_books_cont {
+    background-color: #f1f6f4;
+    max-width: fit-content;
+    padding: 32px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.finished_books_first {
+    color: #032b41;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.finished_books_second {
+    color: #032b41;
+}

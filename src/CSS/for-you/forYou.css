@@ -1,0 +1,23 @@
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    transition: all 0.3s;
+}
+
+/*########################*/
+
+@media (max-width: 768px) {
+  
+    .wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        width: 100vw;
+        transition: all 0.3s;
+    }
+}
+  

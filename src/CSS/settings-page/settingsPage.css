@@ -1,0 +1,80 @@
+
+
+.settings_title {
+    text-align: left;
+    border-bottom: 1px solid #e1e7ea;
+    padding-bottom: 16px;
+    font-size: 32px;
+    color: #032b41;
+    margin-bottom: 32px;
+    font-weight: 700;
+}
+
+.settings_wrapper {
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.settings_login_pic {
+    width: 100%;
+    height: 100%;
+}
+
+.settings_login_text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #032b41;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.settings_login_btn {
+    color: #032b41;
+    background-color: #2bd97c;
+    height: 40px;
+    font-size: 16px;
+    transition: background-color 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 180px;
+    border-radius: 4px;
+}
+
+/* ########### settings content (info) ########## */
+
+.settings_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #e1e7ea;
+    padding-bottom: 24px;
+}
+
+.settings_content_title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #032b41;
+}
+
+.settings_content_subcscription_type {
+    color: #032b41;
+}
+
+.settings_content button {
+    background-color: #2bd97c;
+    color: #032b41;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 180px;
+}

@@ -1,0 +1,45 @@
+
+.saved_books_title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #032b41;
+    margin-bottom: 16px;
+}
+
+.saved_books_count {
+    font-weight: 300;
+    color: #032b41;
+    margin-bottom: 16px;
+}
+
+.saved_books_cont {
+    background-color: #f1f6f4;
+    max-width: fit-content;
+    padding: 32px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.saved_books_first {
+    color: #032b41;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.saved_books_second {
+    color: #032b41;
+}
+
+.display_Saved_books {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    gap: 16px;
+    scroll-snap-type: x;
+    margin-bottom: 32px;
+}
