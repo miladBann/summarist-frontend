@@ -169,10 +169,10 @@ h5 {
 
 
     .modalCont2 {
-        max-width: 350px;
+        max-width: 300px;
         width: 100%;
         position: absolute;
         top: 20%;
-        left: 8%;
+        left: 10%;
     }
 }
