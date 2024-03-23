@@ -49,7 +49,7 @@ function PaymentSuccess() {
                 const data = {
                     email: userEmail
                 }
-                const response = await axios.post(`${process.env.REACT_APP_DB_HOST}/add-premium-user`, data);
+                const response = await axios.post(`${process.env.REACT_APP_BE_HOST}/add-premium-user`, data);
                 dispatch(setPremium());
                 console.log(await response.data)
                 setIsAddedToPremium(true); 
